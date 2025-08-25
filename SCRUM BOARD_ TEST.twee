@@ -1,0 +1,460 @@
+:: StoryTitle
+SCRUM BOARD: TEST
+
+
+:: StoryData
+{
+  "ifid": "17CD1C24-408B-4D9D-BC93-CA69A6E44941",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Week 1 Sprint",
+  "tag-colors": {
+    "High-Priority": "red",
+    "Title": "purple"
+  },
+  "zoom": 1
+}
+
+
+:: Best Practices [Best-Practices] {"position":"300,25","size":"200,100"}
+## 🧩 Structural Rules: Keep Your Code Modular
+
+### 1. **One Script, One Responsibility**
+> _Each script should do one thing well._
+
+- Avoid mixing UI logic, game rules, and input handling in the same script.
+- Example: `PuzzleManager.gd` handles puzzle logic, while `PuzzleUI.gd` handles feedback.
+
+---
+
+### 2. **Use Scenes as Components**
+> _Treat each scene like a reusable puzzle piece._
+
+- Create separate scenes for puzzle elements (`PuzzlePiece.tscn`), boards (`PuzzleBoard.tscn`), and UI.
+- Use instancing to reuse components across puzzles.
+
+---
+
+### 3. **Avoid Deep Node Chains**
+> _Don’t rely on long paths like `get_node("../../../../../Thing")`._
+
+- Use signals or exported variables to communicate between nodes.
+- If you need frequent access, cache the reference in `_ready()`.
+
+---
+
+## 🔁 Communication Rules: Decouple Your Systems
+
+### 4. **Use Signals, Not Direct Calls**
+> _Let nodes talk without knowing each other’s internals._
+
+- Emit signals like `puzzle_solved` or `piece_placed` instead of calling methods directly.
+- Connect signals in the parent scene or via code in `_ready()`.
+
+---
+
+### 5. **Autoload for Global State Only**
+> _Use singletons sparingly and only for truly global data._
+
+- Good: `GameState.gd` tracks player progress or unlocked puzzles.
+- Bad: Using autoloads to store puzzle logic or UI references.
+
+---
+
+## 🧠 Logic Rules: Keep It Clear and Reusable
+
+### 6. **Abstract Puzzle Rules**
+> _Write rule-checking logic as reusable functions or objects._
+
+- Example: `PatternRule.gd`, `MoveLimitRule.gd`, `SymbolMatchRule.gd`
+- Each rule should have an `evaluate()` method that returns `true` or `false`.
+
+---
+
+### 7. **Avoid Hardcoding Puzzle Data**
+> _Use arrays, dictionaries, or external files to define puzzles._
+
+- Example: Store correct sequences as `["red", "blue", "green"]` instead of embedding logic in `if` statements.
+- Consider using JSON or Resource files for complex puzzles.
+
+---
+
+## 🎭 Narrative & UI Rules: Keep Feedback Separate
+
+### 8. **Separate Narrative from Mechanics**
+> _Don’t mix story logic with puzzle logic._
+
+- Use a `DialogueManager.gd` to trigger story events based on puzzle outcomes.
+- Keep emotional feedback modular so it can evolve independently.
+
+---
+
+### 9. **UI Should Listen, Not Decide**
+> _UI displays state—it doesn’t control game logic._
+
+- UI elements should respond to signals like `on_puzzle_solved()` but not evaluate puzzle conditions themselves.
+
+---
+
+## 🧪 Development Rules: Stay Clean While You Build
+
+### 10. **Comment With Intent**
+> _Explain why something exists—not just what it does._
+
+- Good: `# This rule checks alignment to reflect emotional symmetry`
+- Bad: `# Checks if puzzle is solved`
+
+---
+
+### 11. **Name Things Clearly**
+> _Use descriptive, consistent naming._
+
+- Prefix puzzle components with `Puzzle_`, rules with `Rule_`, and UI with `UI_`.
+- Avoid vague names like `thing`, `stuff`, or `temp`.
+
+---
+
+### 12. **Refactor Early and Often**
+> _If it feels messy, clean it before it spreads._
+
+- Don’t wait until the end to fix tangled logic.
+- Extract repeated code into helper functions or utility scripts.
+
+---
+
+## 🧠 Bonus: Philosophical Rule for Creative Coders
+
+### 13. **Code Like a Storyteller**
+> _Let your architecture reflect your game’s emotional and thematic structure._
+
+- If your puzzle explores existential tension, let your rule system mirror ambiguity.
+- If your game values clarity, make your code readable like poetry.
+
+---
+
+Would you like to turn these into a printable guide or scaffold a starter project that follows these principles? I can help you build a clean template with signals, modular rules, and narrative hooks.
+
+
+
+:: Build {"position":"25,276","size":"100,100"}
+[[Test]] 
+
+
+:: Build: 2 {"position":"1075,350","size":"100,100"}
+[[Test: 2]] 
+
+
+:: Build: 3 {"position":"1400,350","size":"100,100"}
+[[Test 3]] 
+
+
+:: Build: Week 1 {"position":"775,350","size":"100,100"}
+
+Building requires these things
+
+
+
+
+
+
+[[Test: Week 1]] 
+
+
+:: Core game Framework [Title] {"position":"100,1200","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Dash [Metroidvania] {"position":"550,800","size":"100,100"}
+As a designer
+I need a progression of abilities to prepare for
+so that the player is prevented from doing things out of order
+
+
+:: Different Input handling [High-Priority] {"position":"400,1200","size":"100,100"}
+Controller friendly 
+Mouse keyboard usable
+
+[[Plan Week 1]] 
+
+
+:: Double Jump [metroidvania] {"position":"250,800","size":"100,100"}
+As a designer
+I need a progression of abilities to prepare for
+so that the player is prevented from doing things out of order
+
+
+
+
+:: Enemy Sprites [Sprite High-Priority] {"position":"400,600","size":"100,100"}
+As a ''player''
+I need ''a consistent tone for enemy sprites'' 
+so that ''I know better where I am in the world''
+
+[[Plan Week 1]] 
+
+
+:: Game state UI {"position":"700,1200","size":"100,100"}
+Track things like health, wealth and power in an overlay on the screen
+
+
+
+:: Hazards {"position":"400,800","size":"100,100"}
+As a player
+I need a challenge
+so that I can feel accomplishment
+
+
+
+:: HitBoxes {"position":"1150,1200","size":"100,100"}
+As a designer 
+I need a reference for what space sprites take up
+so that the I can notate when the player has encountered something
+
+
+:: Main Character [Sprite High-Priority] {"position":"250,600","size":"100,100"}
+As a ''player'' 
+I need ''an avatar'' 
+So that I can ''view my character, get an appreciation for the tone''
+
+
+[[Plan Week 1]] 
+
+
+:: Mechanics of play [Title] {"position":"100,800","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Modular State Machine {"position":"1000,1200","size":"100,100"}
+#Create Individual State Scripts
+
+# State.gd
+extends Node
+
+class_name State
+
+var player
+
+func enter(_player):
+    player = _player
+
+func exit():
+    pass
+
+func physics_process(delta):
+    pass
+	
+	# IdleState.gd
+extends State
+
+func enter(_player):
+    player = _player
+    player.velocity.x = 0
+    player.$AnimatedSprite2D.play("idle")
+
+func physics_process(delta):
+    if Input.is_action_pressed("move_right"):
+        player.change_state("WalkState")
+    elif Input.is_action_just_pressed("jump"):
+        player.velocity.y = -400
+        player.change_state("JumpState")
+		
+		# WalkState.gd
+extends State
+
+func enter(_player):
+    player = _player
+    player.$AnimatedSprite2D.play("walk")
+
+func physics_process(delta):
+    player.velocity.x = 200
+    if not Input.is_action_pressed("move_right"):
+        player.change_state("IdleState")
+    elif Input.is_action_just_pressed("jump"):
+        player.velocity.y = -400
+        player.change_state("JumpState")
+	
+	#Create the State Manager on the Player
+	
+		# StateManager.gd
+extends CharacterBody2D
+
+var velocity = Vector2.ZERO
+var gravity = 900
+var current_state: State
+
+func _ready():
+    change_state("IdleState")
+
+func _physics_process(delta):
+    velocity.y += gravity * delta
+    if current_state:
+        current_state.physics_process(delta)
+    move_and_slide()
+
+func change_state(state_name: String):
+    if current_state:
+        current_state.exit()
+        remove_child(current_state)
+        current_state.queue_free()
+
+    var new_state = load("res://states/%s.gd" % state_name).new()
+    add_child(new_state)
+    current_state = new_state
+    current_state.enter(self)
+	
+	#Debugging Tip
+
+	print("Changing state to: ", state_name)
+
+
+:: Music Sequence {"position":"700,600","size":"100,100"}
+As a player
+I need to hear a music sequence 
+so that I can connect more of my senses to the game and build familiarity immediately when starting
+
+
+
+:: Pause/System Screen {"position":"850,1200","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Plan {"position":"25,151","size":"100,100"}
+Link all sprint items from project backlog
+
+
+[[Build]] 
+
+
+:: Plan Week 1 {"position":"775,225","size":"100,100"}
+[[Main Character]] 
+
+[[Enemy Sprites]] 
+
+[[Tileset World 1]] 
+
+
+
+
+
+
+[[Build: Week 1]] 
+
+
+:: Plan: 2 {"position":"1075,225","size":"100,100"}
+[[Build: 2]] 
+
+
+:: Plan: 3 {"position":"1400,225","size":"100,100"}
+[[Build: 3]] 
+
+
+:: Player Movement and collision [High-Priority] {"position":"250,1200","size":"100,100"}
+Setting a base for physics collisions will allow us to start to build out the world. The goal here is to simply set some numbers and make sure that we can edit them later with ease.
+
+[[Plan Week 1]] 
+
+
+:: Project Backlog [Title] {"position":"35,448","size":"200,100"}
+All the smaller projects associated with completing the game. Broken down into a list of features. 
+
+
+:: Release {"position":"176,275","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Release: 2 {"position":"1225,350","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Release: 3 {"position":"1550,350","size":"100,100"}
+[[Sprint: 4]]
+
+
+
+:: Release: Week 1 {"position":"925,350","size":"100,100"}
+This is required to declare the project released
+
+
+We will move on to [[Sprint: 2]] 
+
+
+:: Save/load system {"position":"550,1200","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Scene Management {"position":"1300,1200","size":"100,100"}
+Shifting between scenes easily
+
+
+:: Sprint demo [Title] {"position":"53,34","size":"200,100"}
+Double-click this passage to edit it.
+
+
+:: Sprint: 2 [Title] {"position":"1100,100","size":"200,100"}
+This sprint will focus on yada yada yada
+
+In person meeting on Wednesday after math to discuss [[Plan: 2]] 
+
+
+:: Sprint: 3 [Title] {"position":"1400,100","size":"200,100"}
+This sprint will focus on yada yada yada
+
+In person meeting on Wednesday after math to discuss [[Plan: 3]] 
+
+
+:: Sprint: 4 [Title] {"position":"1700,100","size":"200,100"}
+
+
+
+:: Test {"position":"176,149","size":"100,100"}
+[[Release]] 
+
+
+:: Test 3 {"position":"1550,225","size":"100,100"}
+[[Release: 3]] 
+
+
+:: Test: 2 {"position":"1225,225","size":"100,100"}
+[[Release: 2]] 
+
+
+:: Test: Week 1 {"position":"925,225","size":"100,100"}
+testing requires these things
+
+
+
+[[Release: Week 1]] 
+
+
+:: Tileset World 1 {"position":"550,600","size":"100,100"}
+As a player
+I need to be able to see what I'm walking on
+so that I know what is happening
+
+[[Plan Week 1]] 
+
+
+:: Visuals/Aestetics [Title] {"position":"100,600","size":"100,100"}
+This Category covers all the visual aspects of the game, including the look and feel of the sprites, the sounds etc. 
+
+
+:: Wall Grab {"position":"700,800","size":"100,100"}
+As a designer
+I need a progression of abilities to prepare for
+so that the player is prevented from doing things out of order
+
+
+:: Week 1 Sprint [Title] {"position":"800,100","size":"200,100"}
+The first sprint we are starting is to move determine a lot of the visual aspects of the game. Everyone is expected to mess around with Asperite for awhile and have fun with it. Do not aim for anything consistant or overly polished here. Just create a lot of possible options
+
+We also need to begin the tileset so that we can develop movement for the character in future sprints
+
+[[Plan Week 1]] 
+
+
+:: how to get everything {"position":"525,25","size":"200,100"}
+Twine2 - download information, install information, export information, edit information
+
+VScode - download information, install information, export information, edit information
+
+GithubDesktop - download information, install information, export information, edit information
