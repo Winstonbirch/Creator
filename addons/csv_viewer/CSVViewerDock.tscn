@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://tqk4wiv4i3lw"]
+
+[ext_resource type="Script" uid="uid://ilskxchmn5c" path="res://addons/csv_viewer/csv_viewer_dock.gd" id="1_sy3dm"]
+[ext_resource type="Texture2D" uid="uid://1au0urs4vy0t" path="res://Assets/Sprites/icon.svg" id="2_6s430"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6s430"]
+
+[node name="CsvViewerDock" type="PanelContainer"]
+script = ExtResource("1_sy3dm")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_6s430")
+
+[node name="file_dialog" type="FileDialog" parent="VBoxContainer"]
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_6s430")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="row_list" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
