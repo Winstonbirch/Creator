@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cq5bw7o7sacxl"
+
+[deps]
+
+files=["res://csvfiles/branching_dialogue.speaker.translation", "res://csvfiles/branching_dialogue.text.translation", "res://csvfiles/branching_dialogue.emotion.translation", "res://csvfiles/branching_dialogue.choices.translation", "res://csvfiles/branching_dialogue.next.translation", "res://csvfiles/branching_dialogue.condition.translation"]
+
+source_file="res://csvfiles/branching_dialogue.csv"
+dest_files=["res://csvfiles/branching_dialogue.speaker.translation", "res://csvfiles/branching_dialogue.text.translation", "res://csvfiles/branching_dialogue.emotion.translation", "res://csvfiles/branching_dialogue.choices.translation", "res://csvfiles/branching_dialogue.next.translation", "res://csvfiles/branching_dialogue.condition.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://3u18425b0rpm"]
+
+[ext_resource type="PackedScene" uid="uid://40k8vmsh5ys" path="res://csv_viewer/CSVViewerDock.tscn" id="1_hhn4m"]
+[ext_resource type="Script" uid="uid://kn77ps733ah3" path="res://csv_viewer/csv_viewer_dock.gd" id="2_fjo2x"]
+
+[node name="CsvViewerDock" instance=ExtResource("1_hhn4m")]
+script = ExtResource("2_fjo2x")

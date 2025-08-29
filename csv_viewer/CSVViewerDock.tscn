@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://40k8vmsh5ys"]
+
+[node name="PanelContainer" type="PanelContainer"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="FileDialog" type="FileDialog" parent="VBoxContainer"]
+access = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="RowList" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
