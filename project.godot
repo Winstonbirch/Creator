@@ -11,6 +11,5 @@ config_version=5
 [application]
 
 config/name="Creator"
-run/main_scene="uid://bj1eukcwdopqd"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://Creator/icon.svg"
