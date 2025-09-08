@@ -1,7 +1,149 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd250radtq1rs"]
+[gd_scene load_steps=26 format=3 uid="uid://dd250radtq1rs"]
 
 [ext_resource type="PackedScene" uid="uid://dk2bfmc5kntod" path="res://Player/Scenes/Mountainman.tscn" id="1_750r4"]
+[ext_resource type="Texture2D" uid="uid://bke1sfax10fyi" path="res://Assets/Sprites/Spirte sheets/Tree stump-Sheet.svg" id="1_gjwya"]
 [ext_resource type="Texture2D" uid="uid://1au0urs4vy0t" path="res://Assets/Sprites/icon.svg" id="2_vlyyt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjwya"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd3gj"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uh11e"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fcig"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ui4y"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5jrs"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(1280, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bri8r"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(1536, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wret8"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(1792, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1pkq"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(2048, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo2fg"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(2304, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3v653"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(2560, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2aqum"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(2816, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hafc0"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(3072, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rk3j"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(3328, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hyk2"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(3584, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uca3o"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(3840, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0suvs"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(4096, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ye7b"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(4352, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_firk3"]
+atlas = ExtResource("1_gjwya")
+region = Rect2(4608, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a7qto"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjwya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dd3gj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uh11e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fcig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ui4y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5jrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bri8r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wret8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1pkq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vo2fg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3v653")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2aqum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hafc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rk3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hyk2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uca3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0suvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ye7b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_firk3")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_750r4"]
 
@@ -9,6 +151,12 @@
 size = Vector2(504, 20)
 
 [node name="Bareworld" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-14, -190)
+scale = Vector2(3.0625, 3.0625)
+sprite_frames = SubResource("SpriteFrames_a7qto")
+autoplay = "default"
 
 [node name="Mountainman" parent="." instance=ExtResource("1_750r4")]
 
