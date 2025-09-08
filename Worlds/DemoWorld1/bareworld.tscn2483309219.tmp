@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd250radtq1rs"]
+
+[ext_resource type="PackedScene" uid="uid://dk2bfmc5kntod" path="res://Player/Scenes/Mountainman.tscn" id="1_750r4"]
+
+[node name="Bareworld" type="Node2D"]
+
+[node name="Mountainman" parent="." instance=ExtResource("1_750r4")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]

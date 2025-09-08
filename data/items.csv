@@ -1,3 +1,0 @@
-id,name,type,damage,flavor_text
-sword_01,Bronze Sword,Slashing,10,"""It is Dangerous to Go Alone"""
-potion_01,Health Potion,consumable,-20,"""Restores 20 HP"""

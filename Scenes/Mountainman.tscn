@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dk2bfmc5kntod"]
-
-[ext_resource type="Texture2D" uid="uid://wb4gddm5y0uy" path="res://Assets/Sprites/Mountainman001.svg" id="1_07gdu"]
-
-[node name="Mountainman" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_07gdu")

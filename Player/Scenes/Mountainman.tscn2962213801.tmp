@@ -1,0 +1,41 @@
+[gd_scene load_steps=9 format=3 uid="uid://dk2bfmc5kntod"]
+
+[ext_resource type="Texture2D" uid="uid://wb4gddm5y0uy" path="res://Assets/Sprites/Mountainman001.svg" id="1_07gdu"]
+[ext_resource type="Script" uid="uid://b6oittvliivuk" path="res://Player/Scripts/Player.gd" id="1_iemll"]
+[ext_resource type="Script" uid="uid://b7bb1wdi31hj4" path="res://Player/Scripts/PlayerInput.gd" id="2_hsqdb"]
+[ext_resource type="Script" uid="uid://c3tbe4w3bd1ww" path="res://Player/Scripts/PlayerVisuals.gd" id="3_yiabu"]
+[ext_resource type="Script" uid="uid://dg1v2n5tewul4" path="res://Player/Scripts/PlayerMovement.gd" id="4_1hs4i"]
+[ext_resource type="Script" uid="uid://bn7xcwlx6ubp0" path="res://Player/Scripts/PlayerAudio.gd" id="5_afn8y"]
+[ext_resource type="Script" uid="uid://cd720b2fpuhu8" path="res://Player/Scripts/PlayerCamera.gd" id="6_axkg7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk0yg"]
+height = 54.0
+
+[node name="Mountainman" type="CharacterBody2D"]
+script = ExtResource("1_iemll")
+
+[node name="PlayerInput" type="Node" parent="."]
+script = ExtResource("2_hsqdb")
+
+[node name="PlayerMovement" type="Node" parent="."]
+script = ExtResource("4_1hs4i")
+
+[node name="PlayerVisuals" type="Node" parent="."]
+script = ExtResource("3_yiabu")
+
+[node name="PlayerAudio" type="Node" parent="."]
+script = ExtResource("5_afn8y")
+
+[node name="PlayerCamera" type="Node" parent="."]
+script = ExtResource("6_axkg7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_07gdu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_rk0yg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dd250radtq1rs"]
+
+[ext_resource type="PackedScene" uid="uid://dk2bfmc5kntod" path="res://Player/Scenes/Mountainman.tscn" id="1_750r4"]
+[ext_resource type="Texture2D" uid="uid://1au0urs4vy0t" path="res://Assets/Sprites/icon.svg" id="2_vlyyt"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_750r4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vlyyt"]
+size = Vector2(504, 20)
+
+[node name="Bareworld" type="Node2D"]
+
+[node name="Mountainman" parent="." instance=ExtResource("1_750r4")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_750r4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-68, 75)
+shape = SubResource("RectangleShape2D_vlyyt")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-67, 75)
+scale = Vector2(3.9375, 0.15625)
+texture = ExtResource("2_vlyyt")
