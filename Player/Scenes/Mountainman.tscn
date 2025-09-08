@@ -20,9 +20,6 @@ script = ExtResource("2_hsqdb")
 [node name="PlayerMovement" type="Node" parent="."]
 script = ExtResource("4_1hs4i")
 
-[node name="PlayerVisuals" type="Node" parent="."]
-script = ExtResource("3_yiabu")
-
 [node name="PlayerAudio" type="Node" parent="."]
 script = ExtResource("5_afn8y")
 
@@ -30,10 +27,17 @@ script = ExtResource("5_afn8y")
 script = ExtResource("6_axkg7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+<<<<<<< Updated upstream
 zoom = Vector2(2, 2)
+=======
+zoom = Vector2(4, 4)
+>>>>>>> Stashed changes
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_07gdu")
+
+[node name="PlayerVisuals" type="Node" parent="Sprite2D"]
+script = ExtResource("3_yiabu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
