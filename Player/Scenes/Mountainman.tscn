@@ -28,11 +28,14 @@ script = ExtResource("6_axkg7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 zoom = Vector2(2, 2)
 =======
 zoom = Vector2(4, 4)
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 02a76e0 (Added a tree stump)
 =======
 >>>>>>> parent of 02a76e0 (Added a tree stump)
 
