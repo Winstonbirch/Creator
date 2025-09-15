@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7mih4it7kp6e"
+path="res://.godot/imported/Insect Attack 3.mp3-8b5d96bbaa88beee6d64bc6caa4cf499.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Insect/Insect Attack 3.mp3"
+dest_files=["res://.godot/imported/Insect Attack 3.mp3-8b5d96bbaa88beee6d64bc6caa4cf499.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

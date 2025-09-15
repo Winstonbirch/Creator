@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6qcuo8irvejw"
+path="res://.godot/imported/Merge3.mp3-e88f662c50bb5924dec4e1f185eee8e7.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Misc/Merge3.mp3"
+dest_files=["res://.godot/imported/Merge3.mp3-e88f662c50bb5924dec4e1f185eee8e7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

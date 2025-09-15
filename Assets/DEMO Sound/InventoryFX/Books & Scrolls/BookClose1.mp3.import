@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fqowpj7qyr7t"
+path="res://.godot/imported/BookClose1.mp3-19ae1d2e2cef9342d95797f36e5e0a87.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Books & Scrolls/BookClose1.mp3"
+dest_files=["res://.godot/imported/BookClose1.mp3-19ae1d2e2cef9342d95797f36e5e0a87.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

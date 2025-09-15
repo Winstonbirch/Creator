@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drarem7jvxssm"
+path="res://.godot/imported/Wind 8 (fast).mp3-765296890d1bba48d4c9ff78a65433a4.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Wind/Wind 8 (fast).mp3"
+dest_files=["res://.godot/imported/Wind 8 (fast).mp3-765296890d1bba48d4c9ff78a65433a4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

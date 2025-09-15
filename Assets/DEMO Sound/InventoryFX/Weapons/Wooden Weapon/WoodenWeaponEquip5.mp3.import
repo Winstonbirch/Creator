@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8v43ld713c2i"
+path="res://.godot/imported/WoodenWeaponEquip5.mp3-d3f06a465b5c7bcf026d07b40c79eca6.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Weapons/Wooden Weapon/WoodenWeaponEquip5.mp3"
+dest_files=["res://.godot/imported/WoodenWeaponEquip5.mp3-d3f06a465b5c7bcf026d07b40c79eca6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

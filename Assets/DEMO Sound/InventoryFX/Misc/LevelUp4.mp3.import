@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bvgdc1c7sk5gh"
+path="res://.godot/imported/LevelUp4.mp3-5df45928f8d8aa80b41091ce08a73d84.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Misc/LevelUp4.mp3"
+dest_files=["res://.godot/imported/LevelUp4.mp3-5df45928f8d8aa80b41091ce08a73d84.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

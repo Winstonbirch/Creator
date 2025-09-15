@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvoiml674rhmd"
+path="res://.godot/imported/Thunder 1.mp3-aa2f903da03416e232c85fc7314096a6.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Thunder/Thunder 1.mp3"
+dest_files=["res://.godot/imported/Thunder 1.mp3-aa2f903da03416e232c85fc7314096a6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

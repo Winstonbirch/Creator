@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b77o3kee17jmu"
+path="res://.godot/imported/MetalWeaponEquip3.mp3-1212dd84773bf0bd209c008b0165f5bd.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Weapons/Metal Weapon/MetalWeaponEquip3.mp3"
+dest_files=["res://.godot/imported/MetalWeaponEquip3.mp3-1212dd84773bf0bd209c008b0165f5bd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

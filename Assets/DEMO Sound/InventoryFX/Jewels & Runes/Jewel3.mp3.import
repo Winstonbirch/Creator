@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3sy0njtjpdlg"
+path="res://.godot/imported/Jewel3.mp3-56f5dbd355f5b92703e76cececa22ac3.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Jewels & Runes/Jewel3.mp3"
+dest_files=["res://.godot/imported/Jewel3.mp3-56f5dbd355f5b92703e76cececa22ac3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

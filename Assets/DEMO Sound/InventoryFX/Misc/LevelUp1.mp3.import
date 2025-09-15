@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chadicywf14wc"
+path="res://.godot/imported/LevelUp1.mp3-663cee1ee8b9b26c07d34d184dc68496.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Misc/LevelUp1.mp3"
+dest_files=["res://.godot/imported/LevelUp1.mp3-663cee1ee8b9b26c07d34d184dc68496.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

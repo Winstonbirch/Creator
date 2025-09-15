@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3132c0gatmts"
+path="res://.godot/imported/Regenerate 2.mp3-f8a08ca4cb22df3c3d78a5e6697de977.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Generic/Regenerate 2.mp3"
+dest_files=["res://.godot/imported/Regenerate 2.mp3-f8a08ca4cb22df3c3d78a5e6697de977.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

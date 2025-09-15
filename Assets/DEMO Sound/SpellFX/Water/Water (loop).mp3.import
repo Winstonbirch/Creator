@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crxvcu85tcoj1"
+path="res://.godot/imported/Water (loop).mp3-7591bb0b54b51c627975a9c90d02bf7b.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Water/Water (loop).mp3"
+dest_files=["res://.godot/imported/Water (loop).mp3-7591bb0b54b51c627975a9c90d02bf7b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

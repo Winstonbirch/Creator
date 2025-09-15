@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0ah0il34mwkp"
+path="res://.godot/imported/CoinPouring3.mp3-e5d575fb5509d19ed20fc47f13dcc4ab.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Coins/CoinPouring3.mp3"
+dest_files=["res://.godot/imported/CoinPouring3.mp3-e5d575fb5509d19ed20fc47f13dcc4ab.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

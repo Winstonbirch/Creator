@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://haibt6iawmow"
+path="res://.godot/imported/Fire 2.mp3-273e766db9773a1e38ae2ff38e3c1fcc.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Fire/Fire 2.mp3"
+dest_files=["res://.godot/imported/Fire 2.mp3-273e766db9773a1e38ae2ff38e3c1fcc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

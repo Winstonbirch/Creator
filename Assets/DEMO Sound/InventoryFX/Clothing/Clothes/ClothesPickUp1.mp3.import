@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cd4rdc7jk4vru"
+path="res://.godot/imported/ClothesPickUp1.mp3-15d862d2151380bab2d83607115e75ee.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Clothing/Clothes/ClothesPickUp1.mp3"
+dest_files=["res://.godot/imported/ClothesPickUp1.mp3-15d862d2151380bab2d83607115e75ee.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btqfokm46pnnf"
+path="res://.godot/imported/Warg Death 1.mp3-a25db0641b413a1ae75f1be4a882e0db.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Warg/Warg Death 1.mp3"
+dest_files=["res://.godot/imported/Warg Death 1.mp3-a25db0641b413a1ae75f1be4a882e0db.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

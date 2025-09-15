@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dx8n3q4pjfb1f"
+path="res://.godot/imported/Dragon Attack 1.mp3-584f3c4ef5408e991ec864ffd2d4c972.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Dragon/Dragon Attack 1.mp3"
+dest_files=["res://.godot/imported/Dragon Attack 1.mp3-584f3c4ef5408e991ec864ffd2d4c972.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

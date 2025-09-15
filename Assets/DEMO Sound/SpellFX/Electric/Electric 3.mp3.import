@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://canvskpkn2j7p"
+path="res://.godot/imported/Electric 3.mp3-6b8bdda7d0b28c0ef0654399246d201f.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Electric/Electric 3.mp3"
+dest_files=["res://.godot/imported/Electric 3.mp3-6b8bdda7d0b28c0ef0654399246d201f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

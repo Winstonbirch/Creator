@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://pihn52ygn7pb"
+path="res://.godot/imported/Orc Wounded 3.mp3-650db9dc76d0f9a65794b1c647c7b547.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Wounded 3.mp3"
+dest_files=["res://.godot/imported/Orc Wounded 3.mp3-650db9dc76d0f9a65794b1c647c7b547.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

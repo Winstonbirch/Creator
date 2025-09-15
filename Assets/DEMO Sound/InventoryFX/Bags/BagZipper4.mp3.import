@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpfx06qhuwml"
+path="res://.godot/imported/BagZipper4.mp3-dc81f9bbc8b495b3568ad5fcb1daf2cb.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Bags/BagZipper4.mp3"
+dest_files=["res://.godot/imported/BagZipper4.mp3-dc81f9bbc8b495b3568ad5fcb1daf2cb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

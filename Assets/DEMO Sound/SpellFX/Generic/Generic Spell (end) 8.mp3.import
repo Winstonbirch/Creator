@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c320sq41oex7m"
+path="res://.godot/imported/Generic Spell (end) 8.mp3-a5bdd962fd55b61478deae1b92de0611.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Generic/Generic Spell (end) 8.mp3"
+dest_files=["res://.godot/imported/Generic Spell (end) 8.mp3-a5bdd962fd55b61478deae1b92de0611.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

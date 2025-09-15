@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnaay3x1qyx2d"
+path="res://.godot/imported/Orc Spear 1.mp3-5c0e377aebf133396432b86430896aac.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Spear 1.mp3"
+dest_files=["res://.godot/imported/Orc Spear 1.mp3-5c0e377aebf133396432b86430896aac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

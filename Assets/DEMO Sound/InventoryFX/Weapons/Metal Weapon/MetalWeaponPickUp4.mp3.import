@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7e2gtp4d1bkk"
+path="res://.godot/imported/MetalWeaponPickUp4.mp3-f2dc1c3d4ac156b664d80348efdaf478.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Weapons/Metal Weapon/MetalWeaponPickUp4.mp3"
+dest_files=["res://.godot/imported/MetalWeaponPickUp4.mp3-f2dc1c3d4ac156b664d80348efdaf478.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

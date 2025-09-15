@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4opd37di6jvm"
+path="res://.godot/imported/Step Armor 3.mp3-8d56c87905ac8a0e77080d3ec829c05a.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Misc/Step Armor 3.mp3"
+dest_files=["res://.godot/imported/Step Armor 3.mp3-8d56c87905ac8a0e77080d3ec829c05a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

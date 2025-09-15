@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpxnk6k160o8r"
+path="res://.godot/imported/Orc Growl 2.mp3-780343a842c78a2d96aec4eab5254f70.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Growl 2.mp3"
+dest_files=["res://.godot/imported/Orc Growl 2.mp3-780343a842c78a2d96aec4eab5254f70.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

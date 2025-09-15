@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfclfb32ilwbe"
+path="res://.godot/imported/Orc Shield Hit 3.mp3-7a0f8cd233f9d5ad86137a51a315156b.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Shield Hit 3.mp3"
+dest_files=["res://.godot/imported/Orc Shield Hit 3.mp3-7a0f8cd233f9d5ad86137a51a315156b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

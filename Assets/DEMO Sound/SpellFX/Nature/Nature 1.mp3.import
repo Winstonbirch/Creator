@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://gt2ecnoi3f44"
+path="res://.godot/imported/Nature 1.mp3-713a80bda7ecc147c222306d6e4f4283.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Nature/Nature 1.mp3"
+dest_files=["res://.godot/imported/Nature 1.mp3-713a80bda7ecc147c222306d6e4f4283.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
