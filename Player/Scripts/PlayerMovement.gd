@@ -1,143 +1,73 @@
 # ===========================
-# PlayerMovement.gd - Handles all player movement
+# PlayerMovement.gd - Handles player movement (DUAL MODE)
 # ===========================
-class_name PlayerMovement
 extends Node
 
-# ===========================
-# WHAT THIS COMPONENT DOES:
-# - Takes input from PlayerInput
-# - Calculates how the player should move
-# - Applies gravity and physics
-# - Keeps movement logic clean and separate
-# ===========================
-
-# Reference to our player
 var player: Player
+var was_on_ground: bool = false
 
-# Movement state tracking
-var was_on_ground_last_frame: bool = false
+func setup(player_node: Player):
+	"""Connect to the player"""
+	player = player_node
+	print("PlayerMovement: Ready!")
 
-# ===========================
-# SETUP (Called by Player when game starts)
-# ===========================
-func setup(player_character: Player):
-	"""Connect this component to the player"""
-	player = player_character
-	print("PlayerMovement: Ready to handle movement!")
-
-# ===========================
-# MOVEMENT UPDATE (Called every physics frame by Player)
-# ===========================
-func update_movement(delta: float):
-	"""Calculate and apply all movement"""
-	_apply_gravity(delta)
-	_handle_horizontal_movement()
-	_handle_jumping()
-	_check_landing()
-
-# ===========================
-# GRAVITY (Makes player fall down)
-# ===========================
-func _apply_gravity(delta: float):
-	"""Make the player fall down when not on ground"""
-	# Only apply gravity if not on ground
-	if not player.is_on_ground():
-		# Use Godot's project gravity setting
-		var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-		gravity *= player.gravity_multiplier
-		
-		# Add gravity to downward velocity
-		player.velocity.y += gravity * delta
-		
-		# Cap falling speed so player doesn't fall too fast
-		player.velocity.y = min(player.velocity.y, player.max_fall_speed)
-
-# ===========================
-# HORIZONTAL MOVEMENT (Left and right)
-# ===========================
-func _handle_horizontal_movement():
-	"""Move player left and right based on input"""
-	var move_direction = player.get_input_direction()
-	
-	if move_direction != 0:
-		# Player wants to move - set velocity directly for responsive controls
-		player.velocity.x = move_direction * player.get_move_speed()
+func update_movement(delta):
+	"""Update the player's velocity based on current mode"""
+	if player.is_platformer_mode():
+		update_platformer_movement(delta)
 	else:
-		# Player not pressing movement - stop smoothly
-		player.velocity.x = move_toward(player.velocity.x, 0, player.get_move_speed())
-
-# ===========================
-# JUMPING (Going up)
-# ===========================
-func _handle_jumping():
-	"""Handle jump logic"""
-	# Check if player wants to jump - use direct Input check instead of component call
-	var wants_to_jump = Input.is_action_just_pressed("jump")
+		update_topdown_movement(delta)
 	
-	# Only jump if player wants to jump AND is on ground
-	if wants_to_jump and player.is_on_ground():
-		_perform_jump()
+	# Emit movement events
+	player.emit_movement_events()
 
-func _perform_jump():
-	"""Make the player jump"""
-	# Set upward velocity (negative Y is up in Godot)
-	player.velocity.y = -player.get_jump_strength()
+# ===========================
+# PLATFORMER MOVEMENT
+# ===========================
+func update_platformer_movement(delta):
+	"""Handle platformer physics (gravity + jumping)"""
+	var direction = player.get_input_direction()
 	
-	# Tell everyone we jumped
-	player._emit_jump_event()
+	# Apply gravity
+	if not player.is_on_ground():
+		player.velocity.y += get_gravity() * delta
+		# Cap falling speed
+		if player.velocity.y > player.max_fall_speed:
+			player.velocity.y = player.max_fall_speed
 	
-	print("PlayerMovement: Player jumped!")
-
-# ===========================
-# LANDING DETECTION (When player hits ground)
-# ===========================
-func _check_landing():
-	"""Check if player just landed on ground"""
-	var is_on_ground_now = player.is_on_ground()
+	# Handle jumping
+	if player.input_handler.wants_to_jump() and player.is_on_ground():
+		player.velocity.y = -player.get_jump_strength()
+		player.emit_jump_event()
 	
-	# If we weren't on ground last frame, but are now = we just landed!
-	if not was_on_ground_last_frame and is_on_ground_now:
-		_handle_landing()
+	# Horizontal movement
+	if direction.x != 0:
+		player.velocity.x = direction.x * player.get_move_speed()
+	else:
+		# Apply friction when not moving
+		player.velocity.x = move_toward(player.velocity.x, 0, player.get_move_speed() * delta * 10)
 	
-	# Remember ground state for next frame
-	was_on_ground_last_frame = is_on_ground_now
-
-func _handle_landing():
-	"""Handle what happens when player lands"""
-	# Tell everyone we landed
-	player._emit_landing_event()
+	# Check for landing
+	if player.is_on_ground() and not was_on_ground:
+		player.emit_landing_event()
 	
-	print("PlayerMovement: Player landed!")
+	was_on_ground = player.is_on_ground()
 
 # ===========================
-# UTILITY METHODS (Helpful info for other components)
+# TOP-DOWN MOVEMENT
 # ===========================
-func get_horizontal_speed() -> float:
-	"""Get how fast player is moving horizontally"""
-	return abs(player.velocity.x)
-
-func get_vertical_speed() -> float:
-	"""Get how fast player is moving vertically"""
-	return player.velocity.y
-
-func is_falling() -> bool:
-	"""Check if player is falling down"""
-	return player.velocity.y > 0 and not player.is_on_ground()
-
-func is_rising() -> bool:
-	"""Check if player is moving up (jumping)"""
-	return player.velocity.y < 0
+func update_topdown_movement(_delta):
+	"""Handle top-down physics (no gravity, 8-directional movement)"""
+	var direction = player.get_input_direction()
+	
+	# Set velocity based on direction and speed
+	player.velocity = direction * player.get_move_speed()
+	
+	# No gravity in top-down mode!
 
 # ===========================
-# DEBUG INFO (Helpful for beginners)
+# HELPER FUNCTIONS
 # ===========================
-func get_debug_info() -> String:
-	"""Get readable info about movement state"""
-	var info = "Movement Debug:\n"
-	info += "Velocity: " + str(player.velocity) + "\n"
-	info += "On Ground: " + str(player.is_on_ground()) + "\n"
-	info += "Horizontal Speed: " + str(get_horizontal_speed()) + "\n"
-	info += "Is Falling: " + str(is_falling()) + "\n"
-	info += "Is Rising: " + str(is_rising())
-	return info
+func get_gravity() -> float:
+	"""Calculate gravity for platformer mode"""
+	return 980.0 * player.gravity_multiplier

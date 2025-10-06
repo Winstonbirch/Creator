@@ -1,5 +1,5 @@
 # ===========================
-# PlayerVisuals.gd - Handles how the player looks
+# PlayerVisuals.gd - Handles how the player looks (DUAL MODE)
 # ===========================
 class_name PlayerVisuals
 extends Node
@@ -9,6 +9,7 @@ extends Node
 # - Controls player sprite and animations
 # - Makes player face the right direction
 # - Changes appearance based on what player is doing
+# - Adapts visuals for platformer vs top-down modes
 # - Keeps visual logic separate and organized
 # ===========================
 
@@ -50,6 +51,7 @@ func _connect_to_player_events():
 	# Connect to player signals so we know when to change visuals
 	player.player_landed.connect(_on_player_landed)
 	player.player_jumped.connect(_on_player_jumped)
+	player.mode_switched.connect(_on_mode_switched)
 
 # ===========================
 # VISUAL UPDATE (Called every frame by Player)
@@ -66,9 +68,9 @@ func _update_facing_direction():
 	"""Make player sprite face the direction they're moving"""
 	var move_direction = player.get_input_direction()
 	
-	# Only change direction if player is actually trying to move
-	if move_direction != 0:
-		facing_direction = 1 if move_direction > 0 else -1
+	# Only change direction if player is actually trying to move horizontally
+	if move_direction.x != 0:
+		facing_direction = 1 if move_direction.x > 0 else -1
 		_apply_facing_direction()
 
 func _apply_facing_direction():
@@ -92,6 +94,13 @@ func _update_animation():
 
 func _determine_current_animation() -> String:
 	"""Figure out what animation should be playing"""
+	if player.is_platformer_mode():
+		return _determine_platformer_animation()
+	else:
+		return _determine_topdown_animation()
+
+func _determine_platformer_animation() -> String:
+	"""Animations for platformer mode"""
 	# Check different states in order of priority
 	
 	if not player.is_on_ground():
@@ -108,6 +117,21 @@ func _determine_current_animation() -> String:
 	else:
 		# Player is standing still
 		return "idle"
+
+func _determine_topdown_animation() -> String:
+	"""Animations for top-down mode"""
+	# In top-down, we don't have jumping/falling
+	
+	if player.is_moving():
+		# Player is moving
+		return "walk"
+	else:
+		# Player is standing still
+		return "idle"
+	
+	# Optional: You could add directional animations here
+	# For example: "walk_up", "walk_down", "walk_left", "walk_right"
+	# based on move_direction
 
 func _play_animation(animation_name: String):
 	"""Actually play the animation"""
@@ -135,6 +159,15 @@ func _on_player_jumped():
 	# You could add things like:
 	# - Jump particle effect
 	# - Squash and stretch animation
+
+func _on_mode_switched(new_mode):
+	"""Called when game mode switches"""
+	print("PlayerVisuals: Mode switched to ", new_mode)
+	# Optional: Add visual feedback when switching modes
+	# - Flash effect
+	# - Particle burst
+	# - Color change
+	# - Scale pulse
 
 # ===========================
 # UTILITY METHODS (Helpful for other systems)
@@ -170,6 +203,7 @@ func set_facing_direction(direction: int):
 func get_debug_info() -> String:
 	"""Get readable info about visual state"""
 	var info = "Visuals Debug:\n"
+	info += "Current Mode: " + str(player.current_mode) + "\n"
 	info += "Facing Direction: " + str(facing_direction) + "\n"
 	info += "Current Animation: " + str(last_animation) + "\n"
 	info += "Has Sprite: " + str(sprite != null) + "\n"

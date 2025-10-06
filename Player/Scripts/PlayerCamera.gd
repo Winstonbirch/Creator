@@ -1,5 +1,5 @@
 # ===========================
-# PlayerCamera.gd - Camera that follows the player
+# PlayerCamera.gd - Camera that follows the player (DUAL MODE)
 # ===========================
 class_name PlayerCamera
 extends Node
@@ -7,7 +7,7 @@ extends Node
 # ===========================
 # WHAT THIS COMPONENT DOES:
 # - Makes camera follow the player smoothly
-# - Keeps player centered on screen
+# - Adapts behavior based on game mode (platformer vs top-down)
 # - Handles camera bounds and limits
 # - Adds nice camera effects like screen shake
 # - Keeps camera logic separate and organized
@@ -94,6 +94,7 @@ func _setup_camera_properties():
 func _connect_to_player_events():
 	"""Listen for player events that might affect camera"""
 	player.player_landed.connect(_on_player_landed)
+	player.mode_switched.connect(_on_mode_switched)
 	# We could add more events here for different camera effects
 
 # ===========================
@@ -133,9 +134,16 @@ func _update_look_ahead():
 		look_ahead_offset = Vector2.ZERO
 		return
 	
-	# Get player's movement direction
+	# Get player's movement direction (now a Vector2)
 	var move_direction = player.get_input_direction()
-	var target_look_ahead = Vector2(move_direction * look_ahead_distance, 0)
+	var target_look_ahead = Vector2.ZERO
+	
+	if player.is_platformer_mode():
+		# PLATFORMER: Only look ahead horizontally
+		target_look_ahead = Vector2(move_direction.x * look_ahead_distance, 0)
+	else:
+		# TOP-DOWN: Look ahead in full movement direction
+		target_look_ahead = move_direction * look_ahead_distance
 	
 	# Smoothly move look ahead offset
 	var delta = 1.0/60.0  # Safe fallback
@@ -207,8 +215,21 @@ func _apply_camera_position():
 # ===========================
 func _on_player_landed():
 	"""Add screen shake when player lands"""
-	# Small shake when landing
-	start_screen_shake(0.1, 5.0)
+	# Small shake when landing (platformer mode only)
+	if player.is_platformer_mode():
+		start_screen_shake(0.1, 5.0)
+
+func _on_mode_switched(new_mode):
+	"""React to mode changes"""
+	print("PlayerCamera: Mode switched to ", new_mode)
+	# Optional: Add camera effects when switching modes
+	# start_screen_shake(0.15, 8.0)
+	
+	# Optional: Change camera zoom based on mode
+	# if new_mode == Player.GameMode.TOP_DOWN:
+	#     set_zoom(Vector2(0.8, 0.8))  # Zoom out for top-down
+	# else:
+	#     set_zoom(Vector2(1.0, 1.0))  # Normal zoom for platformer
 
 # ===========================
 # MANUAL CAMERA CONTROL (For special situations)
@@ -283,6 +304,7 @@ func get_debug_info() -> String:
 	var info = "Camera Debug:\n"
 	info += "Has Camera: " + str(camera != null) + "\n"
 	info += "Following Player: " + str(follow_player) + "\n"
+	info += "Current Mode: " + str(player.current_mode) + "\n"
 	info += "Base Position: " + str(base_position) + "\n"
 	info += "Look Ahead: " + str(look_ahead_offset) + "\n"
 	info += "Shake Timer: " + str(shake_timer) + "\n"
