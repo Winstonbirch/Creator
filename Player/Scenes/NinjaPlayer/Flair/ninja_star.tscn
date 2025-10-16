@@ -1,0 +1,76 @@
+[gd_scene load_steps=17 format=3 uid="uid://cxlypah0jmdbr"]
+
+[ext_resource type="Script" uid="uid://ba5hvg4ay4335" path="res://Player/Scripts/NinjaPlayerScripts/Projectile.gd" id="1_kdjuh"]
+[ext_resource type="Resource" uid="uid://borqibsjd0bm8" path="res://Player/Resources/Attacks .tres files/PD_Knightball.tres" id="2_83c2r"]
+[ext_resource type="Texture2D" uid="uid://b1rc0n1dn7h37" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_000.png" id="3_b2uek"]
+[ext_resource type="Texture2D" uid="uid://dyayk8sklisk" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_001.png" id="4_tm3py"]
+[ext_resource type="Texture2D" uid="uid://c58i161uejlgk" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_002.png" id="5_ybsri"]
+[ext_resource type="Texture2D" uid="uid://dub12jhvp54xq" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_003.png" id="6_1lby0"]
+[ext_resource type="Texture2D" uid="uid://du15jfbret4xq" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_004.png" id="7_gleit"]
+[ext_resource type="Texture2D" uid="uid://ub84xbx6xbrv" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_005.png" id="8_deoqm"]
+[ext_resource type="Texture2D" uid="uid://cqjwqc5phoi76" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_006.png" id="9_ijg7n"]
+[ext_resource type="Texture2D" uid="uid://bqbj6x1c8otsf" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_007.png" id="10_4p0xj"]
+[ext_resource type="Texture2D" uid="uid://cd17o27ps6f8d" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_008.png" id="11_qqalv"]
+[ext_resource type="Texture2D" uid="uid://b0odrxmk0yd1j" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_009.png" id="12_naw0e"]
+[ext_resource type="Texture2D" uid="uid://e2ejlu2yvv1j" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_010.png" id="13_5xhe7"]
+[ext_resource type="Texture2D" uid="uid://dmlhnwpa8i477" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_011.png" id="14_5rmtn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c6qr0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_urp0r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_b2uek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tm3py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ybsri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1lby0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gleit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_deoqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ijg7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4p0xj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qqalv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_naw0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5xhe7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5rmtn")
+}],
+"loop": true,
+"name": &"Knightball",
+"speed": 5.0
+}]
+
+[node name="NinjaStar" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_kdjuh")
+projectile_data = ExtResource("2_83c2r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_c6qr0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_urp0r")
+animation = &"Knightball"
