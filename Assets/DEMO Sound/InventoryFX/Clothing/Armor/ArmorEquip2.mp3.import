@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dua4344iie6fc"
+path="res://.godot/imported/ArmorEquip2.mp3-7312cdaf7586b47de965fd39c9d15ccf.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Clothing/Armor/ArmorEquip2.mp3"
+dest_files=["res://.godot/imported/ArmorEquip2.mp3-7312cdaf7586b47de965fd39c9d15ccf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

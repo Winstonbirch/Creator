@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://br8r5g1chh1am"
+path="res://.godot/imported/Dragon Step 4.mp3-c164c10bfd507b272512bb1835c8fb07.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Dragon/Dragon Step 4.mp3"
+dest_files=["res://.godot/imported/Dragon Step 4.mp3-c164c10bfd507b272512bb1835c8fb07.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

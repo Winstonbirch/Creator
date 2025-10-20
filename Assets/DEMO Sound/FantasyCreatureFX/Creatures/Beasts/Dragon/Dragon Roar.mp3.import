@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dkqehhvqfp83k"
+path="res://.godot/imported/Dragon Roar.mp3-0ded77274a3c82ac6b8c9bc7cb38a5b0.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Dragon/Dragon Roar.mp3"
+dest_files=["res://.godot/imported/Dragon Roar.mp3-0ded77274a3c82ac6b8c9bc7cb38a5b0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

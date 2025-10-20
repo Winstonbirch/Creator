@@ -35,7 +35,7 @@ script = ExtResource("6_axkg7")
 texture = ExtResource("1_07gdu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
+position = Vector2(167, 86)
 shape = SubResource("CapsuleShape2D_rk0yg")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

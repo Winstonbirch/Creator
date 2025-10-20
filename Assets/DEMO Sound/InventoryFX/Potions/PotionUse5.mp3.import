@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://h2s3rc3yxgiu"
+path="res://.godot/imported/PotionUse5.mp3-02d456c566bd5b19e2d26ba0b69e06e3.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Potions/PotionUse5.mp3"
+dest_files=["res://.godot/imported/PotionUse5.mp3-02d456c566bd5b19e2d26ba0b69e06e3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

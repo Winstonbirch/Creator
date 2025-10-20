@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhuohhwxj3pkn"
+path="res://.godot/imported/Insect Death 1.mp3-9424d81315dcd62873ed160fd7acf1aa.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Insect/Insect Death 1.mp3"
+dest_files=["res://.godot/imported/Insect Death 1.mp3-9424d81315dcd62873ed160fd7acf1aa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

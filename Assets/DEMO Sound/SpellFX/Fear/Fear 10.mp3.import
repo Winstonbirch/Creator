@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bx3xdwh8os5yl"
+path="res://.godot/imported/Fear 10.mp3-240a006d781adec289205ef9505d6627.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Fear/Fear 10.mp3"
+dest_files=["res://.godot/imported/Fear 10.mp3-240a006d781adec289205ef9505d6627.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

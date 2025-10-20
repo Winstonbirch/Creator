@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnc06s4qi4slb"
+path="res://.godot/imported/Orc Slash 2.mp3-aa970d23705dc608a2602d4a8b92d984.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Slash 2.mp3"
+dest_files=["res://.godot/imported/Orc Slash 2.mp3-aa970d23705dc608a2602d4a8b92d984.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4v6re66pu682"
+path="res://.godot/imported/Nature Wall (summon).mp3-ab45a4992763cf86fa1bd2084cc4711d.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Nature/Nature Wall (summon).mp3"
+dest_files=["res://.godot/imported/Nature Wall (summon).mp3-ab45a4992763cf86fa1bd2084cc4711d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

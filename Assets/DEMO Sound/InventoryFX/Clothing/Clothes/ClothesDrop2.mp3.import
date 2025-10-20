@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crnt8mgnfbf7y"
+path="res://.godot/imported/ClothesDrop2.mp3-78dab752660643ce94c89cde4d10f528.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Clothing/Clothes/ClothesDrop2.mp3"
+dest_files=["res://.godot/imported/ClothesDrop2.mp3-78dab752660643ce94c89cde4d10f528.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

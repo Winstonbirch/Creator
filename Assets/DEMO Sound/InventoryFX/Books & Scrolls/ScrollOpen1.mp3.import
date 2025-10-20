@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c47n1qt1cd3es"
+path="res://.godot/imported/ScrollOpen1.mp3-9576a2e0e756becd0d4b45f49dfaa4d0.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Books & Scrolls/ScrollOpen1.mp3"
+dest_files=["res://.godot/imported/ScrollOpen1.mp3-9576a2e0e756becd0d4b45f49dfaa4d0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

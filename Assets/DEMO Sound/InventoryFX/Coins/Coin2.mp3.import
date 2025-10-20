@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://br4ffc1g236ct"
+path="res://.godot/imported/Coin2.mp3-bd63504d5f9bb5f41a7efdf4c8330d21.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Coins/Coin2.mp3"
+dest_files=["res://.godot/imported/Coin2.mp3-bd63504d5f9bb5f41a7efdf4c8330d21.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

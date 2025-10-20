@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cryp5kkuri1eq"
+path="res://.godot/imported/Nature 5.mp3-9332d445679832f82ab5e41b824d7120.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Nature/Nature 5.mp3"
+dest_files=["res://.godot/imported/Nature 5.mp3-9332d445679832f82ab5e41b824d7120.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

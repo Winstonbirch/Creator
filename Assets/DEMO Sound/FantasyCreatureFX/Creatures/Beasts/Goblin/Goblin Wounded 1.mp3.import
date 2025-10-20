@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfodntx3t1gki"
+path="res://.godot/imported/Goblin Wounded 1.mp3-6df66e9fe60f0110094fd0ddd8e6bd04.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Goblin/Goblin Wounded 1.mp3"
+dest_files=["res://.godot/imported/Goblin Wounded 1.mp3-6df66e9fe60f0110094fd0ddd8e6bd04.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

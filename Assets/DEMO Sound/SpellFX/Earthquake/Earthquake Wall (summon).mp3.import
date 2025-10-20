@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://pmcmkmc518iy"
+path="res://.godot/imported/Earthquake Wall (summon).mp3-987de7ae3a2518145cbfb644c63a7599.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Earthquake/Earthquake Wall (summon).mp3"
+dest_files=["res://.godot/imported/Earthquake Wall (summon).mp3-987de7ae3a2518145cbfb644c63a7599.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

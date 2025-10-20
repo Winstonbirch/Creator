@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ykh3cjpayebq"
+path="res://.godot/imported/Earthquake 6.mp3-bd3e86bae55c2af1336ad54bcf973f66.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Earthquake/Earthquake 6.mp3"
+dest_files=["res://.godot/imported/Earthquake 6.mp3-bd3e86bae55c2af1336ad54bcf973f66.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

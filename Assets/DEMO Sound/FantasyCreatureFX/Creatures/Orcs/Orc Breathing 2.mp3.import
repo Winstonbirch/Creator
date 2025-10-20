@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2kejojfhcey8"
+path="res://.godot/imported/Orc Breathing 2.mp3-07e7bb924301afbf6180eda5752e6405.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Breathing 2.mp3"
+dest_files=["res://.godot/imported/Orc Breathing 2.mp3-07e7bb924301afbf6180eda5752e6405.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

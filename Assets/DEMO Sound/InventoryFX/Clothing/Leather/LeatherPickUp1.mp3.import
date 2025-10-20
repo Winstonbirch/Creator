@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3d40xmaax0u"
+path="res://.godot/imported/LeatherPickUp1.mp3-4c96fe8fff610cbba7555629f12a5484.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Clothing/Leather/LeatherPickUp1.mp3"
+dest_files=["res://.godot/imported/LeatherPickUp1.mp3-4c96fe8fff610cbba7555629f12a5484.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

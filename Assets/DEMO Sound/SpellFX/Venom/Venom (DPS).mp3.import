@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgxkwy7i5o5kx"
+path="res://.godot/imported/Venom (DPS).mp3-e687ce2fd244367a779b6715de1269cc.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Venom/Venom (DPS).mp3"
+dest_files=["res://.godot/imported/Venom (DPS).mp3-e687ce2fd244367a779b6715de1269cc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxljvmujvkfju"
+path="res://.godot/imported/Dragon Breathing.mp3-4c85c60c95619c48157115c17f1ef664.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Dragon/Dragon Breathing.mp3"
+dest_files=["res://.godot/imported/Dragon Breathing.mp3-4c85c60c95619c48157115c17f1ef664.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

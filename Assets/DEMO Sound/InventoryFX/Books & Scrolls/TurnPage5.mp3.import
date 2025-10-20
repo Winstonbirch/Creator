@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://co7yxr1e5x6w1"
+path="res://.godot/imported/TurnPage5.mp3-f5da4a2b4f3c7d9bf29ad2748f900d22.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Books & Scrolls/TurnPage5.mp3"
+dest_files=["res://.godot/imported/TurnPage5.mp3-f5da4a2b4f3c7d9bf29ad2748f900d22.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

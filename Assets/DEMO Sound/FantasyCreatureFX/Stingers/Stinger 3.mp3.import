@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4ifs6syvhnil"
+path="res://.godot/imported/Stinger 3.mp3-96f6ed85b8d02a660532b49b27c58ee4.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Stingers/Stinger 3.mp3"
+dest_files=["res://.godot/imported/Stinger 3.mp3-96f6ed85b8d02a660532b49b27c58ee4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

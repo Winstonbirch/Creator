@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://di5qy5qvktpk4"
+path="res://.godot/imported/Select2.mp3-94df34a9c2321a9c20761e1d0678b5a6.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Misc/Select2.mp3"
+dest_files=["res://.godot/imported/Select2.mp3-94df34a9c2321a9c20761e1d0678b5a6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

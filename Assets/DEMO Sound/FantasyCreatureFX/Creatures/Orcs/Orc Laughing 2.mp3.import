@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5m7l6uegchll"
+path="res://.godot/imported/Orc Laughing 2.mp3-277bacad02332c0c5b286d9ae27e51ea.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Laughing 2.mp3"
+dest_files=["res://.godot/imported/Orc Laughing 2.mp3-277bacad02332c0c5b286d9ae27e51ea.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

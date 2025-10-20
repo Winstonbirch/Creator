@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csqdevgpt44iq"
+path="res://.godot/imported/CoinFlip1.mp3-ac0e3e48f158121e25a4c3b7d3d64c64.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Coins/CoinFlip1.mp3"
+dest_files=["res://.godot/imported/CoinFlip1.mp3-ac0e3e48f158121e25a4c3b7d3d64c64.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

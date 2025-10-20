@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhog1bheynkqx"
+path="res://.godot/imported/Open Scroll 2.mp3-dbf9993f5fbf6720740354b98acd4119.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Tomes-Books/Open Scroll 2.mp3"
+dest_files=["res://.godot/imported/Open Scroll 2.mp3-dbf9993f5fbf6720740354b98acd4119.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

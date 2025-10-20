@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c10qt153o6e1q"
+path="res://.godot/imported/Fire 5 (DPS).mp3-c77e0b48b188deba8ccd366003bd0639.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Fire/Fire 5 (DPS).mp3"
+dest_files=["res://.godot/imported/Fire 5 (DPS).mp3-c77e0b48b188deba8ccd366003bd0639.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

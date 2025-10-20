@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dr5cuew8bf5xi"
+path="res://.godot/imported/Turn Page 8.mp3-1a55957725c487e8b137150268125b57.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Tomes-Books/Turn Page 8.mp3"
+dest_files=["res://.godot/imported/Turn Page 8.mp3-1a55957725c487e8b137150268125b57.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

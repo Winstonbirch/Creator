@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3hkeobl5l058"
+path="res://.godot/imported/ArmorPickUp5.mp3-cde7822a1d2a2723bc18b6715756d9c8.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Clothing/Armor/ArmorPickUp5.mp3"
+dest_files=["res://.godot/imported/ArmorPickUp5.mp3-cde7822a1d2a2723bc18b6715756d9c8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

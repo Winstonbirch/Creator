@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2absk8nj1i4e"
+path="res://.godot/imported/Goblin Attack Voice 3.mp3-53b17324bddb87c3c8897b4fb595b97f.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Goblin/Goblin Attack Voice 3.mp3"
+dest_files=["res://.godot/imported/Goblin Attack Voice 3.mp3-53b17324bddb87c3c8897b4fb595b97f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

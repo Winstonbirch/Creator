@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bho6qhhmwg0gg"
+path="res://.godot/imported/Food2.mp3-3eaef592f9f807eb87d99ded44aabd57.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Food & Herbs/Food2.mp3"
+dest_files=["res://.godot/imported/Food2.mp3-3eaef592f9f807eb87d99ded44aabd57.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

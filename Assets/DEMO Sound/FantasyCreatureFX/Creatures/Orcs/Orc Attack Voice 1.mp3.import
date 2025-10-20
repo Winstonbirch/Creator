@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bm78q36tnvboi"
+path="res://.godot/imported/Orc Attack Voice 1.mp3-3212b16e3d138d687b278185f3b619e4.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Attack Voice 1.mp3"
+dest_files=["res://.godot/imported/Orc Attack Voice 1.mp3-3212b16e3d138d687b278185f3b619e4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

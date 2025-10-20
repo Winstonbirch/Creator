@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdqlvmqga1y5u"
+path="res://.godot/imported/BagClose1.mp3-6415926db407d85791cc46b79c0ab6e8.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Bags/BagClose1.mp3"
+dest_files=["res://.godot/imported/BagClose1.mp3-6415926db407d85791cc46b79c0ab6e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

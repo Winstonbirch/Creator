@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://duxdeveob3anb"
+path="res://.godot/imported/Goblin Axe.mp3-1ea646d68130e7d5eeca0ed84c2eaf6f.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Beasts/Goblin/Goblin Axe.mp3"
+dest_files=["res://.godot/imported/Goblin Axe.mp3-1ea646d68130e7d5eeca0ed84c2eaf6f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

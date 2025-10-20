@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcu3xe4edd41v"
+path="res://.godot/imported/Madness 6.mp3-41bcdd6eb2a409c73395bbec1bcd95b2.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Madness/Madness 6.mp3"
+dest_files=["res://.godot/imported/Madness 6.mp3-41bcdd6eb2a409c73395bbec1bcd95b2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

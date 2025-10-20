@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hg0whycju7o"
+path="res://.godot/imported/Ice 3.mp3-53ac8d88162a8e062661bde749dc62f2.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Ice/Ice 3.mp3"
+dest_files=["res://.godot/imported/Ice 3.mp3-53ac8d88162a8e062661bde749dc62f2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

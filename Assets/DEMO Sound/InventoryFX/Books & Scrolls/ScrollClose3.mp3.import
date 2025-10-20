@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://beek0ii2oqp2c"
+path="res://.godot/imported/ScrollClose3.mp3-ef7a77a87f46c0dc9a166b3ff9de11d9.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/InventoryFX/Books & Scrolls/ScrollClose3.mp3"
+dest_files=["res://.godot/imported/ScrollClose3.mp3-ef7a77a87f46c0dc9a166b3ff9de11d9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

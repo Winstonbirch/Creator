@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3renwfn2htgj"
+path="res://.godot/imported/Orc Negative Grunt 1.mp3-c29977bfe88587871949db6b299c07ad.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/FantasyCreatureFX/Creatures/Orcs/Orc Negative Grunt 1.mp3"
+dest_files=["res://.godot/imported/Orc Negative Grunt 1.mp3-c29977bfe88587871949db6b299c07ad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

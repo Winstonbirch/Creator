@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dluw0rwev8loq"
+path="res://.godot/imported/Revive 6.mp3-dab24fb3fe2a5f1f6a02252b1fabc702.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Revive/Revive 6.mp3"
+dest_files=["res://.godot/imported/Revive 6.mp3-dab24fb3fe2a5f1f6a02252b1fabc702.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://vn6nc1q83ljt"
+path="res://.godot/imported/Sleep-Silence 11.mp3-0f1a6cdd0a3abef18a7ef82a4ed6a2ae.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Sleep-Silence/Sleep-Silence 11.mp3"
+dest_files=["res://.godot/imported/Sleep-Silence 11.mp3-0f1a6cdd0a3abef18a7ef82a4ed6a2ae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

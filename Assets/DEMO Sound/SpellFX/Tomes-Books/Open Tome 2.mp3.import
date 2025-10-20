@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7sta3bmqcjv6"
+path="res://.godot/imported/Open Tome 2.mp3-fa43e5030622007e9d3d40159411dda0.mp3str"
+
+[deps]
+
+source_file="res://Assets/DEMO Sound/SpellFX/Tomes-Books/Open Tome 2.mp3"
+dest_files=["res://.godot/imported/Open Tome 2.mp3-fa43e5030622007e9d3d40159411dda0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
