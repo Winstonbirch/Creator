@@ -109,7 +109,7 @@ func _physics_process(delta: float) -> void:
 	if projectile_data.rotation_speed != 0:
 		rotation_degrees += projectile_data.rotation_speed * delta
 	
-	# Move
+	# Projectile Movement
 	position += direction * current_speed * delta
 
 func _on_area_entered(area: Area2D) -> void:

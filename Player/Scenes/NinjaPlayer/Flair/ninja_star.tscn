@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://cxlypah0jmdbr"]
 
 [ext_resource type="Script" uid="uid://ba5hvg4ay4335" path="res://Player/Scripts/NinjaPlayerScripts/Projectile.gd" id="1_kdjuh"]
-[ext_resource type="Resource" uid="uid://borqibsjd0bm8" path="res://Player/Resources/Attacks .tres files/PD_Knightball.tres" id="2_83c2r"]
+[ext_resource type="Resource" uid="uid://borqibsjd0bm8" path="res://Player/Resources/Attackscomponents/Rangedtres/PD_Knightball.tres" id="2_83c2r"]
 [ext_resource type="Texture2D" uid="uid://b1rc0n1dn7h37" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_000.png" id="3_b2uek"]
 [ext_resource type="Texture2D" uid="uid://dyayk8sklisk" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_001.png" id="4_tm3py"]
 [ext_resource type="Texture2D" uid="uid://c58i161uejlgk" path="res://Assets/DEMOsprites/Knight/Mini Knight 03/PNG Sequences/Attacking/Attacking_002.png" id="5_ybsri"]

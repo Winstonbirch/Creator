@@ -16,7 +16,7 @@ func check_transitions() -> void:
 		transitioned.emit("IdleState")
 
 func physics_update(delta: float) -> void:
-	apply_gravity(delta)  # Add this
+	apply_gravity(delta)  
 	
 	actor.velocity.x = input_direction.x * move_speed
 	
