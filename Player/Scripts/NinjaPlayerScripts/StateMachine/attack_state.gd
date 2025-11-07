@@ -2,6 +2,7 @@ extends PlayerStateNinja
 
 @export var attack_data: AttackData
 @export var combat_component: CombatComponent
+@export var combo_component: ComboComponent
 
 var attack_finished: bool = false
 var is_dashing: bool = false

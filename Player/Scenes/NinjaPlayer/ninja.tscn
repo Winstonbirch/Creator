@@ -60,10 +60,14 @@
 [ext_resource type="Script" uid="uid://vlmgmjc6no6m" path="res://Player/Scripts/NinjaPlayerScripts/StateMachine/walk_state.gd" id="58_oo13p"]
 [ext_resource type="Script" uid="uid://c3baglpd6s21g" path="res://Player/Scripts/NinjaPlayerScripts/StateMachine/jump_state.gd" id="59_cksjo"]
 [ext_resource type="Script" uid="uid://qdxtqseugn3x" path="res://Player/Scripts/NinjaPlayerScripts/StateMachine/attack_state.gd" id="60_8tl7e"]
-[ext_resource type="Resource" uid="uid://dvb5ct2tqbijw" path="res://Player/Resources/Attacks .tres files/SlashAttack.tres" id="61_k8n8s"]
+[ext_resource type="Resource" uid="uid://dvb5ct2tqbijw" path="res://Player/Resources/Attackscomponents/Meleetres/SlashAttack.tres" id="61_k8n8s"]
 [ext_resource type="Script" uid="uid://7bpcb8qlp45s" path="res://Player/Scripts/NinjaPlayerScripts/StateMachine/ranged_attack_state.gd" id="62_161ln"]
-[ext_resource type="Resource" uid="uid://cab56n1hto41h" path="res://Player/Resources/Attacks .tres files/AD_Knightball.tres" id="63_7xrmc"]
-[ext_resource type="Script" uid="uid://d3j3byqtdvm83" path="res://Player/Scripts/NinjaPlayerScripts/combat_component.gd" id="64_h3nim"]
+[ext_resource type="Resource" uid="uid://cab56n1hto41h" path="res://Player/Resources/Attackscomponents/Rangedtres/AD_Knightball.tres" id="63_7xrmc"]
+[ext_resource type="Script" uid="uid://d3j3byqtdvm83" path="res://Player/Resources/Attackscomponents/combat_component.gd" id="64_h3nim"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_80vsn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fpv26"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_loeqn"]
 animations = [{
@@ -250,19 +254,11 @@ animations = [{
 "speed": 15.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_80vsn"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fpv26"]
-
 [node name="Ninja" type="CharacterBody2D"]
 
 [node name="PlayerInputController" type="Node" parent="." node_paths=PackedStringArray("state_machine")]
 script = ExtResource("1_i1pnx")
 state_machine = NodePath("../Statemachine")
-
-[node name="PlayerAnimatedSprite" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_loeqn")
-animation = &"SlashAttack"
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_80vsn")
@@ -307,7 +303,7 @@ position_smoothing_enabled = true
 script = ExtResource("64_h3nim")
 attack_hitbox = NodePath("../Area2D")
 actor = NodePath("..")
-projectile_spawn_point = NodePath("../Marker2D")
+projectile_spawn_point = NodePath("../PlayerAnimatedSprite/Marker2D")
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(34, 23)
@@ -316,5 +312,9 @@ position = Vector2(34, 23)
 position = Vector2(42, 6)
 shape = SubResource("RectangleShape2D_fpv26")
 
-[node name="Marker2D" type="Marker2D" parent="."]
+[node name="PlayerAnimatedSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_loeqn")
+animation = &"Walking"
+
+[node name="Marker2D" type="Marker2D" parent="PlayerAnimatedSprite"]
 position = Vector2(91, 9)

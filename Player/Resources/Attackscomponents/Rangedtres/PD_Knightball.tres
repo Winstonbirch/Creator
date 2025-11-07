@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="ProjectileData" load_steps=2 format=3 uid="uid://borqibsjd0bm8"]
+
+[ext_resource type="Script" uid="uid://c5r23w3cqnxcs" path="res://Player/Scripts/NinjaPlayerScripts/projectileData.gd" id="1_keyeo"]
+
+[resource]
+script = ExtResource("1_keyeo")
+projectile_name = "Knightball"
+animation_name = "Knightball"
+scale = Vector2(1, 1)
+modulate_color = Color(1, 1, 1, 1)
+speed = 1000.0
+lifetime = 6.0
+gravity_affected = false
+gravity_strength = 980.0
+rotation_speed = 180.0
+damage = 10
+pierce_count = 1
+knockback_force = 200.0
+homing = false
+homing_strength = 200.0
+homing_detection_radius = 300.0
+bounces = 0
+explodes_on_impact = false
+explosion_radius = 50.0
+explosion_damage = 15
+spawn_trail = false
+spawn_on_hit_effect = false
+spawn_on_death_effect = false
+metadata/_custom_type_script = "uid://c5r23w3cqnxcs"

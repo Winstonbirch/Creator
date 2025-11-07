@@ -1,10 +1,10 @@
-[gd_resource type="Resource" script_class="ProjectileData" load_steps=2 format=3 uid="uid://borqibsjd0bm8"]
+[gd_resource type="Resource" script_class="ProjectileData" load_steps=2 format=3 uid="uid://bk8ypff1ms8ay"]
 
-[ext_resource type="Script" uid="uid://c5r23w3cqnxcs" path="res://Player/Scripts/NinjaPlayerScripts/projectileData.gd" id="1_wl87k"]
+[ext_resource type="Script" uid="uid://c5r23w3cqnxcs" path="res://Player/Scripts/NinjaPlayerScripts/projectileData.gd" id="1_14hk7"]
 
 [resource]
-script = ExtResource("1_wl87k")
-projectile_name = "Knightball"
+script = ExtResource("1_14hk7")
+projectile_name = "Quickshot"
 animation_name = "Knightball"
 scale = Vector2(1, 1)
 modulate_color = Color(1, 1, 1, 1)
